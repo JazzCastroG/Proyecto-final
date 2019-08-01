@@ -1,0 +1,6 @@
+h1 { font-weight: bold; text-transform: uppercase;	font-size: 34px; color: black; text-align: center; padding: 50px 0px 0px 0px; margin:0px; }
+h2 { font-weight: bold; text-transform: uppercase;	font-size: 32px; color: black; text-align: center; padding: 50px 0px 40px 0px; margin:0px; }
+#bio p {font-size: 16px; color: black; text-align: justify; line-height: 30px;text-shadow: 0px 5px 6px #fff}
+p {font-size: 16px; color: black; text-align: center; line-height: 30px;margin: 20px auto 0px auto; font-weight: bold;text-shadow: 0px 3px 2px #cccbcd}
+.box-container {display:block; width: 93%; height:auto; margin:30px auto 0px auto;box-shadow: 0px 5px 6px #cccbcd;padding: 0px 30px 50px 30px;}
+#bio img {display:block; width: 10%; height:auto; margin:20px auto 30px auto;}

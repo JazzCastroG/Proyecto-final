@@ -1,8 +1,11 @@
 import React from 'react';
 import './App.css';
+
 import { BrowserRouter } from 'react-router-dom';
 import { Route } from 'react-router-dom';
+
 import Header from './Header';
+import Biografia from './Biografia';
 import Ux from './Ux';
 import Animacion from './Animacion';
 import Fotografia from './Fotografia';
@@ -10,11 +13,12 @@ import Modelado from './Modelado';
 import Otros from './Otros';
 import Footer from './Footer';
 
-function App() {
+function App() { 
   return (
-    <div className="App"> 
+    <div className="App">
       <Header/>
       <BrowserRouter>
+        <Route exact path="/" component={ Biografia }/>
         <Route exact path="/" component={ Ux }/>
         <Route exact path="/" component={ Animacion }/>
         <Route exact path="/" component={ Fotografia }/>

@@ -1,42 +1,52 @@
 import React, { Component } from 'react';
 import './index.css';
-
+//import './mail.js';
+//<div class="eight wide column">
+//<form class="ui form">
+  //<div class="field">
+    //<label>First Name</label>
+    //<input type="text" name="first-name" placeholder="First Name" />
+  //</div>
+  //<div class="field">
+    //<label>Last Name</label>
+    //<input type="text" name="last-name" placeholder="Last Name" />
+  //</div>
+  //<div class="field">
+    //<div class="ui checkbox">
+      //<input type="checkbox" tabindex="0" class="hidden" />
+      //<label>I agree to the Terms and Conditions</label>
+    //</div>
+  //</div>
+  //<button class="ui button" type="button">Submit</button>
+//</form>
+//</div>
 class Footer extends Component {
-    render() {
-        return (
-            <div>
-                <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
-            <div class="ui fluid container bg-footer">
-              
-                <div class="row">
-                <div class="ui centered grid"></div>
-                <div class="for wide computer sixteen wide mobile five wide tablet column">
-                    <img src={process.env.PUBLIC_URL + '/imagenes/jazmin.jpg'} alt="ux/ui" class="ui image" />
-                </div>
-                <div class="for wide computer sixteen wide mobile five wide tablet column">
-                    <form class="ui form">
-                    <div class="ui text container ">
-                    <h2 class="ui header">CONTACTO</h2>
-                </div>
-                        <div class="field">
-                            <h1>BRENDA JAZMÍN CASTRO</h1>
-                            <p>jazmincastrog@icloud.com</p>
-                            <p><a href="tel:+521 5610889407"></a>+521 5610889407</p>
-                            <label>Nombre</label>
-                            <input placeholder="First Name" />
-                        </div>
-                        <div class="field">
-                            <label>Mensaje</label>
-                            <input placeholder="Last Name" />
-                        </div>
-                        <button type="submit" class="ui button">Enviar</button>
-                    </form>
-                </div>
-                </div>
-                </div>
-                </div>
-        );
-    }
+  render() {
+    return (
+      <footer id="footer">
+        <div class="ui fluid container">
+          <div class="row">
+            
+          <div className="box-container">
+            <div class="ui centered stackable grid">
+              <div class="six wide column">
+                <img src={process.env.PUBLIC_URL + '/imagenes/jazmin.jpg'} alt="ux/ui" class="ui image" />
+              </div>
+              <div class="six wide column">
+              <h2 className="hover_yellow">CONTACTO</h2>
+                <h3 className="hover_pink">BRENDA JAZMÍN CASTRO</h3>
+                <p><i aria-hidden="true" class="mail outline circular olive icon"></i><a href="mailto:jazmincastrog@icloud.com">jazmincastrog@icloud.com</a></p>
+                <p><i aria-hidden="true" class="phone volume circular yellow icon"></i><a href="tel:+5215610889407">56 1088 9407</a></p>
+                <p className="hover_violet"><i aria-hidden="true" class="graduation cap circular pink icon"></i>Professional ID:  1 1 5 7 6 1 3 8</p>
+                <p><i aria-hidden="true" class="linkedin circular purple icon"></i><a href="https://www.linkedin.com/in/--jazmin--castro--/">https://www.linkedin.com/in/--jazmin--castro--/</a></p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    );
+  }
 }
 
 export default Footer;
